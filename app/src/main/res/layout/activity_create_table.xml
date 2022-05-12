@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CreateTableActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/design_default_color_primary_variant"
+        android:layout_height="?actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:id="@+id/btnBackCreateTable"
+                >
+
+
+            </ImageButton>
+            <TextView
+                android:text="Create Table"
+                android:layout_centerVertical="true"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="Database: "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <Spinner
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:id="@+id/spinnerCreateTable"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="Add Row:"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp">
+
+        </TextView>
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_add_24"
+            android:scaleType="fitCenter"
+            android:id="@+id/btnAddRow"
+            android:background="@android:color/transparent">
+        </ImageButton>
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Table Name: "
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+
+        </TextView>
+        <EditText
+            android:background="@drawable/edittxt_background"
+            android:layout_weight="7"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edtNameTable"
+            android:layout_height="match_parent">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:layout_height="40dp">
+
+        </TextView>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Name"
+           />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerViewCreateTable"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:layout_width="match_parent"
+        android:background="@color/design_default_color_primary"
+        android:text="Save"
+        android:textColor="#FFF"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnSaveTable"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>

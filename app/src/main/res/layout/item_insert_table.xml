@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtNameColumn"
+        android:text="Cot 1: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="70dp"
+        android:layout_height="30dp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edtDataRow"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@id/txtNameColumn"
+        android:background="@drawable/edittxt_background"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_height="30dp">
+
+    </EditText>
+
+</RelativeLayout>

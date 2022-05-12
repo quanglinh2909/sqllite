@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DeleteFromActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/design_default_color_primary_variant"
+        android:layout_height="?actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:id="@+id/btnBackCreateTable"
+                >
+
+
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Delete From"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Database: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/titledatabase"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <Spinner
+            android:layout_toEndOf="@id/titledatabase"
+            android:id="@+id/spinerDatabase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Table: "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/titleTable"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinerTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/titleTable"></Spinner>
+    </RelativeLayout>
+
+
+</LinearLayout>
